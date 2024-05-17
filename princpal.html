@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./principal.css">
+    <title>Cinema Club</title>
+
+
+    <style>
+        .ini{
+            grid-area: ini;
+            background-color: rgb(173, 173, 245);
+        }
+        .cine{
+            grid-area: cine;
+            background-color: yellow;
+        }
+        .msg{
+            grid-area: msg;
+            background-color: rgba(30, 118, 145, 0.425);
+        }
+
+
+        /*vista para el telefono*/
+        .grid-container{
+            display: -ms-inline-grid;
+            gap: 10px;
+            grid-template-rows: auto;
+           grid-template-areas:
+           "ini"
+           "cine"
+           "msg"
+           "proximamente"
+           "cards"
+           "hover"
+           "uno"
+           "imagen"
+           "container_dos";
+        }
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: auto;
+                    grid-template-areas:
+                    "ini ini"
+                    "cine cine"
+                    "msg msg"
+                    "proximamente proximamente"
+                    "cards cards"
+                    "hover hover"
+                    "uno uno"
+                    "imagen imagen"
+                    "container_dos container_dos"
+            }
+        }
+    </style>
+
+
+    <style>
+        h1{
+            color: darkblue;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body class="grid-container">
+    <header>
+        <div class="cine"><h1>Cinema Club</h1></div>
+       
+        <img style="width: 100%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMtEcOYLK0iEVrS3-eb1i2Gyszp6f0RXcdS8blV34asG2-aXTBY3Um_pqC7688sVGFxDI&usqp=CAU" alt="">
+        <nav>
+            <a class="hover" href="./index.html"><h3>Palomitas y golosinas </h3></a>
+        </nav>
+        <nav>
+            <a class="hover" href="./formulario.html"><h3>Escoge tu Pelicula </h3></a>
+        </nav>
+    </header>
+    <section>
+        <h2 class="ini"> Bienvenidos a CINEMA CLUB</h2>
+        <p class="msg"> En Cimena Club tenemos las mejores películas actuales, compra tus boletos en la web y acumula puntos</p>
+    </section>
+   
+    <section class="cards" id="tienda">
+        <div class="container_dos">
+            <div class="uno">
+             <img class="imagen" src="https://pics.filmaffinity.com/El_reino_del_planeta_de_los_simios-663256597-large.jpg" alt="Peluche azul de pinguino">
+             <div>
+                    <h3>El planeta de los simios: el nuevo reino</h3>
+                    <p>Un joven simio emprende un viaje y se cuestiona sobre el pasado</p>
+                    <button><a href="#">12:30</a></button>
+                    <button><a href="#">15:30</a></button>
+                    <button><a href="#">17:30</a></button>
+                    <button><a href="#">19:30</a></button>
+             </div>
+        </div>
+        <div class="uno">
+            <img class="imagen" src="https://www.universalpictures.com.mx/tl_files/content/movies/kung_fu_panda_4/posters/01.jpg" alt="Peluche azul de pinguino">
+            <div>
+                <h3>Kung fu panda 4</h3>
+                <p>Se le pide a Po que se convierta en el líder espiritual del vale de la paz</p>
+                <button><a href="#">12:30</a></button>
+                <button><a href="#">15:30</a></button>
+                <button><a href="#">17:30</a></button>                    <button><a href="#">19:30</a></button>
+            </div>
+        </div>
+        <div class="uno">
+            <img class="imagen" src="https://static.cinepolis.com/resources/mx/movies/posters/414x603/45592-461175-20240327053152.jpg" alt="Peluche azul de pinguino">
+            <div>
+                <h3>Godzilla y Kong: el nuevo imperio</h3>
+                <p>Profundiza en las historias de estos titanes y sus origenes, así como en los misterios de la Isla Calavera</p>
+                <button><a href="#">12:30</a></button>
+                <button><a href="#">15:30</a></button>
+                <button><a href="#">17:30</a></button>
+                <button><a href="#">19:30</a></button>
+            </div>
+        </div>
+        <div class="uno">
+            <img class="imagen" src="https://www.infobae.com/new-resizer/ghYgG1TY5pXJ-1RPkj74kPftDJM=/768x1024/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/ROADCHVJRZBIPDW3BKDM36NWAM.jpg" alt="Peluche azul de pinguino">
+            <div>
+                <h3>Garfield: fuera de casa</h3>
+                <p>Es forzado a dejar su consentida vida para unirse a Vic</p>
+                <button><a href="#">12:30</a></button>
+                <button><a href="#">15:30</a></button>
+                <button><a href="#">17:30</a></button>
+                <button><a href="#">19:30</a></button>
+            </div>
+         </div>
+    </div>
+
+
+    </section>
+
+
+    <article class="proximanente">
+        <img src="https://phantom-marca-mx.unidadeditorial.es/992027536fc4eed867305a3b883eece9/resize/828/f/jpg/mx/assets/multimedia/imagenes/2024/03/07/17098519599619.jpg" alt="">
+        <h2>Intensamente 2</h2>
+        <h3>PROXIMAMENTE</h3>
+    </article>
+</body>
+</html>

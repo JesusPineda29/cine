@@ -1,0 +1,24 @@
+body{
+    background-color: blue;
+}
+
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+.elemento{
+    background-color: rgb(171, 189, 189);
+}
+
+
+.elemento3{
+    background-color: rgb(171, 189, 189);
+}
+
+
+.elemento5{
+    background-color: rgb(171, 189, 189);
+}
