@@ -1,7 +1,7 @@
 h1{
     text-align: center;
     font-size: 32px;
-    font-family:sans-serif
+    font-family:sans-serif;
     
     
 
@@ -28,7 +28,7 @@ h2 {
 
 .marca {
     background-color: rgb(212, 97, 223);
-    position: absolute
+    
     top: 50%;
     right: -20px;
     transform: translateY(-50%);
@@ -48,7 +48,6 @@ h2 {
 }
 
 .marca1 {
-    background-color: 
     padding: 5px;
     color: white;
     margin-right: 10px;
@@ -61,26 +60,6 @@ button, input[type="button"] {
     padding: 10px 20px; 
     border-radius: 5px; 
     margin: 1px; }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
 
 
     .grid-container>* {
@@ -114,6 +93,8 @@ button, input[type="button"] {
     .footer{
         grid-area: footer;
         background-color: orangered;
+        font-size: large;
+       
     }
     /*Vista para telefono*/
     .grid-container{
@@ -162,4 +143,10 @@ button, input[type="button"] {
         font: size 2.5rem;
         text-align: center;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    .promo{
+        opacity: 30%;
+
     }
