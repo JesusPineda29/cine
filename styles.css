@@ -3,6 +3,7 @@ h1{
     font-size: 32px;
     font-family:sans-serif
     
+    
 
     background-color: steelblue;
     color: rgb(13, 41, 41);
@@ -82,30 +83,12 @@ button, input[type="button"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .grid-container>* {
+        align-items: center;
         text-align: center;
         border-radius: 15px;
         padding: 10px;
+        align-items: center;
     }
 
     .header{
@@ -144,6 +127,7 @@ button, input[type="button"] {
         "sidebar"
         "articulo"
         "footer" ;
+        align-items: center;
     }
     /*Vista para tablet*/
     @media(min-width:768px){
@@ -163,6 +147,7 @@ button, input[type="button"] {
     }
     @media(min-width:900px){
         .grid-container{
+            align-items: center;
             grid-template-columns: auto;
             grid-template-areas: 
             "header header header"
