@@ -1,11 +1,10 @@
 h1{
     text-align: center;
     font-size: 32px;
-    font-family:sans-serif;
-    
+    font-family:sans-serif
     
 
-    background-color: steelblue;
+    background-color steelblue;
     color: rgb(13, 41, 41);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -20,7 +19,7 @@ background: rgb(193, 193, 212);
 
 
 h2 {
-    color: blueviolet;
+    color: rgb(56, 56, 146);
 }
 
 
@@ -28,7 +27,7 @@ h2 {
 
 .marca {
     background-color: rgb(212, 97, 223);
-    
+    position: absolute
     top: 50%;
     right: -20px;
     transform: translateY(-50%);
@@ -48,6 +47,7 @@ h2 {
 }
 
 .marca1 {
+    background-color: 
     padding: 5px;
     color: white;
     margin-right: 10px;
@@ -59,17 +59,20 @@ button, input[type="button"] {
     color: white; 
     padding: 10px 20px; 
     border-radius: 5px; 
-    margin: 1px; }
+    margin: 1px;
+}
 
 
-    .grid-container>* {
-        align-items: center;
+
+
+/*COMBOS*/
+
+.grid-container>* {
         text-align: center;
         border-radius: 15px;
         padding: 10px;
-        align-items: center;
     }
-
+    
     .header{
         grid-area: header;
         background-color: rgb(92, 15, 107);
@@ -93,42 +96,14 @@ button, input[type="button"] {
     .footer{
         grid-area: footer;
         background-color: orangered;
-        font-size: large;
-       
     }
-    /*Vista para telefono*/
-    .grid-container{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: auto;
-        grid-template-areas:
-        "header"
-        "navbar"
-        "division"
-        "sidebar"
-        "articulo"
-        "footer" ;
-        align-items: center;
-    }
-    /*Vista para tablet*/
-    @media(min-width:768px){
-        .grid-container{
-            grid-template-columns: auto;
-            grid-template-areas: 
-            "header header"
-            "navbar navbar"
-            "division division"
-            "sidebar sidebar"
-            "articulo articulo"
-            "footer footer";
-        }
+    
         .title{
             font-size: 1.5rem;
         }
     }
     @media(min-width:900px){
         .grid-container{
-            align-items: center;
             grid-template-columns: auto;
             grid-template-areas: 
             "header header header"
@@ -146,7 +121,46 @@ button, input[type="button"] {
     }
 
 
-    .promo{
-        opacity: 30%;
-
+    /*REQUISITOS PUNTO 4*/
+    .contenedor1{
+        box-sizing: border-box;
+width: 100%;
+border: solid #5B6DCD 10px;
+padding: 5px;
     }
+
+  .comida{
+    outline: thick double rgb(49, 49, 197);
+  }
+
+
+
+   /*vista para el tablet*/
+   @media(min-width:768px){
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "header header"
+        "navbar navbar"
+        "division division"
+        "sidebar sidebar"
+        "articulo articulo"
+        "footer footer";
+    }
+}
+
+ /*vista para el telefono*/
+ @media(max-width:425px){
+    .grid-container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "header"
+        "navbar"
+        "division"
+        "sidebar"
+        "articulo"
+        "footer";
+    }
+}
